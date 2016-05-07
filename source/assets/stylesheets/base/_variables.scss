@@ -1,9 +1,12 @@
 // Typography
-$base-font-family: $helvetica;
-$heading-font-family: $base-font-family;
+$sans-serif: 'Questrial', sans-serif;
+$serif: 'Sanchez', serif;
+
+$base-font-family: $serif;
+$heading-font-family: 'Rubik Mono One', sans-serif;
 
 // Font Sizes
-$base-font-size: 1em;
+$base-font-size: 1.0 em;
 
 // Line height
 $base-line-height: 1.5;

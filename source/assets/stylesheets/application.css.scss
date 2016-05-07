@@ -1,7 +1,11 @@
 @import "vendor/normalize";
-
 @import "bourbon";
 @import "base/base";
 @import "neat";
-
 @import "global";
+@import "refills/hero";
+@import "refills/navigation";
+@import "refills/footer";
+@import "refills/geometrictype";
+@import "refills/map";
+@import "refills/sideimage";
