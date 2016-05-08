@@ -2,27 +2,18 @@
   $base-border-radius: 3px !default;
   $action-color: #477DCA !default;
   $large-screen: 53.75em !default;
-  $hero-background-top: rgb(206, 210, 251);
-  $hero-background-bottom: rgb(51, 14, 14);
-  $hero-color: rgba(255, 255, 255, 0.77);
+  $hero-color: rgba(255, 255, 255, 0.7);
   $gradient-angle: 10deg;
   $hero-image: "../images/tyediehorizontal.jpg";
+  $hero-txt-image: "../images/tyedievertical.jpg";
 
   background: url($hero-image),
-              linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top),
-              no-repeat $hero-background-top scroll;
-  // background: linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top),
-  //             no-repeat $hero-background-top scroll;
+              no-repeat scroll;
   background-color: #324766;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 3em;
-
-  .hero-logo img {
-    height: 4em;
-    margin-bottom: 1em;
-  }
 
   .hero-inner {
     @include outer-container($max-width);
