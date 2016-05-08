@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <link href='//fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Sanchez:400italic,400' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Rubik+Mono+One' rel='stylesheet' type='text/css'>
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/css/master.css" media="screen" title="no title" charset="utf-8">
     <title>Page Title</title>
     <link href="assets/stylesheets/application.css" rel="stylesheet" media="all" />
   </head>
@@ -33,7 +49,7 @@
       <a href="javascript:void(0)" id="js-centered-navigation-mobile-menu" class="centered-navigation-mobile-menu">MENU</a>
       <nav role="navigation">
         <ul id="js-centered-navigation-menu" class="centered-navigation-menu show">
-          <li class="nav-link"><a href="#beginning">Introductions</a></li>
+          <li class="nav-link"><a href="#introduction">Introductions</a></li>
           <li class="nav-link"><a href="#celebration">The Celebration</a></li>
           <li class="nav-link"><a href="#bring">What to Bring</a></li>
           <li class="nav-link logo">
@@ -53,7 +69,7 @@
   <article class="type-system-geometric">
     <div class="dualbox">
       <div class="textbox">
-        <p class="type">Introductions</p>
+        <p class="type" id="introduction">Introductions</p>
         <h1>Hello friends...</h1>
         <p>Allisa and Gabe were married last June on Anini Beach on the island of Kauai.  It was a small ceremony (more on that below). We would have liked to invite you all were that possible. It was however always our intention to have some sort of mainland party/reception for our lovely families and friends.  It has taken us longer than we hoped to put that together.</p>
         <p>In the meantime, our marriage is bearing fruit (more on that below). So this party is meant as a celebration of our marriage as well as a celebration of our coming tot/sprog/baby. Two birds, one stone. Two people (soon to be three), one family, one soir&eacute;e. Hopefully that's not too confusing. In any case, we have invited you because we would love to see you and to have you share in this celebration of our economy-size bundle of life changes.  Please be a dear and RSVP below so we can plan accordingly.</p>
@@ -210,6 +226,7 @@
   </article>
 
   <article class="type-system-geometric">
+    <p class="type" id="celebration">Celebrate Good Times C'mon</p>
     <h1>The Celebration</h1>
     <p>So, about that party</p>
     <ul>
@@ -227,8 +244,9 @@
 
   </article>
   <br>
-  <article class="type-system-geometric">
 
+  <article class="type-system-geometric">
+    <p class="type" id="bring">Bring</p>
     <h1>What To Bring</h1>
 
     <p><span>Lorem ipsum dolor sit amet</span>, consectetur adipisicing elit. Consequatur a, ullam, voluptatum incidunt neque doloremque vel inventore distinctio laudantium harum</a> illo quam nulla dolor alias iure impedit! Accusamus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, a, ullam, voluptatum incidunt neque porro numquam doloremque vel inventore distinctio laudantium harum illo quam nulla dolor alias iure impedit.
@@ -240,7 +258,7 @@
 
 
 
-    <div class="side-image">
+    <div class="side-image" id="rsvp">
       <div class="images-wrapper"></div>
         <div class="side-image-content">
           <h1>R.S.V.P.</h1>
@@ -282,7 +300,7 @@
   </article>
 
   <article class="type-system-geometric">
-
+    <p class="type" id="questions">Things we forgot?</p>
     <h1>Questions?</h1>
 
     <p><span>Lorem ipsum dolor sit amet</span>, consectetur adipisicing elit. Consequatur a, ullam, voluptatum incidunt neque doloremque vel inventore distinctio laudantium harum</a> illo quam nulla dolor alias iure impedit! Accusamus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, a, ullam, voluptatum incidunt neque porro numquam doloremque vel inventore distinctio laudantium harum illo quam nulla dolor alias iure impedit.
@@ -326,8 +344,9 @@
 </footer>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDA7vnDa61Bgd6n2KEXiPEcivc5OveJTX0"
-    async defer>
-<script src="https://maps.googleapis.com/maps/api/js"></script>
+async defer>
+</script>
+
 <script>
   var bittersMap = (function () {
     var mapCenter = new google.maps.LatLng(45.4687019,-122.6609832),
