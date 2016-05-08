@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-icon-72x72.png">
@@ -15,16 +21,11 @@
     <link rel="icon" type="image/png" sizes="96x96" href="assets/favicons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
     <link rel="manifest" href="/assets/favicons/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="assets/favicons/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
     <link href='//fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Sanchez:400italic,400' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Rubik+Mono+One' rel='stylesheet' type='text/css'>
-    <meta charset="utf-8">
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Page Title</title>
+
+    <title>Allisa &amp; Gabe</title>
     <link href="assets/stylesheets/application.css" rel="stylesheet" media="all" />
   </head>
   <body>
@@ -343,9 +344,7 @@
     </div> -->
 </footer>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDA7vnDa61Bgd6n2KEXiPEcivc5OveJTX0"
-async defer>
-</script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
 
 <script>
   var bittersMap = (function () {
@@ -360,15 +359,16 @@ async defer>
           mapTypeId: google.maps.MapTypeId.ROADMAP
         },
         map = new google.maps.Map(mapCanvas, mapOptions),
-        contentString =
-          '<div id="content">'+
-          '<div id="siteNotice">'+
-          '</div>'+
-          '<h1 id="firstHeading" class="firstHeading">Sellwood Park</h1>'+
-          '<div id="bodyContent"'+
-          '<p>(Site H)</p>'+
-          '</div>'+
-          '</div>',
+        contentString = [
+          '<div id="content">',
+            '<h1 id="firstHeading" class="firstHeading">',
+              'Sellwood Park',
+            '</h1>',
+            '<div id="bodyContent">',
+              '<p>(Site H)</p>',
+            '</div>',
+          '</div>'
+        ].join(''),
         infowindow = new google.maps.InfoWindow({
           content: contentString,
           maxWidth: 300
