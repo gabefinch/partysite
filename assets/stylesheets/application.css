@@ -648,16 +648,12 @@ html {
           margin-right: 0; } }
 
 .hero {
-  background: url("../images/tyediehorizontal.jpg"), -webkit-linear-gradient(80deg, #330e0e, #ced2fb), no-repeat #ced2fb scroll;
-  background: url("../images/tyediehorizontal.jpg"), linear-gradient(10deg, #330e0e, #ced2fb), no-repeat #ced2fb scroll;
+  background: url("../images/tyediehorizontal.jpg"), no-repeat scroll;
   background-color: #324766;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 3em; }
-  .hero .hero-logo img {
-    height: 4em;
-    margin-bottom: 1em; }
   .hero .hero-inner {
     max-width: 1200px;
     margin-left: auto;
@@ -676,7 +672,7 @@ html {
     .hero .hero-inner .hero-copy {
       text-align: center; }
       .hero .hero-inner .hero-copy h1, .hero .hero-inner .hero-copy h3, .hero .hero-inner .hero-copy p {
-        color: rgba(255, 255, 255, 0.77); }
+        color: rgba(255, 255, 255, 0.7); }
       .hero .hero-inner .hero-copy h1 {
         font-size: 3.375em;
         margin-bottom: 0.296em;
