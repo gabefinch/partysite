@@ -2,9 +2,9 @@
   $base-border-radius: 3px !default;
   $action-color: #477DCA !default;
   $large-screen: 53.75em !default;
-  $hero-color: rgba(79, 117, 111, 0.8);
+  $hero-color: rgba(255, 247, 118, 0.76);
   $gradient-angle: 10deg;
-  $hero-image: "../images/tyediehorizontal.jpg";
+  $hero-image: "../images/symetrictop.jpg";
 
   background: url($hero-image),
               no-repeat scroll;
@@ -23,8 +23,8 @@
     .hero-copy {
       text-align: center;
       color: $hero-color;
-      -webkit-text-fill-color: rgba(109, 147, 141, 0.4);
-      -webkit-text-stroke-width: 4px;
+      -webkit-text-fill-color: rgba(255, 247, 118, 0.68);
+      -webkit-text-stroke-width: 2px;
       -webkit-text-stroke-color: black;
 
       h1 {
@@ -38,7 +38,19 @@
         }
         @include media($large-screen) {
           font-size: 7.594em;
+          -webkit-text-stroke-width: 4px;
 
+        }
+      }
+      @keyframes fadeInDown {
+        from {
+          opacity: 0;
+          transform: translate3d(0, -100%, 0);
+        }
+
+        to {
+          opacity: 1;
+          transform: none;
         }
       }
       h3 {
@@ -46,16 +58,12 @@
         margin-bottom: 0.198em;
         font-weight: normal;
         letter-spacing: 0.05em;
+        animation-duration: 3.5s;
+        animation-fill-mode: both;
+        animation-name: fadeInDown;
         @include media($large-screen) {
           font-size: 3.375em;
-        }
-      }
-      p {
-        line-height: 1.4em;
-        margin: 0 auto 3em auto;
-        @include media($large-screen) {
-          font-size: 1.0em;
-          max-width: 40%;
+          -webkit-text-stroke-width: 4px;
         }
       }
     }
