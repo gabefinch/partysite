@@ -652,14 +652,13 @@ html {
   background-color: #324766;
   background-position: top;
   background-repeat: no-repeat;
-  background-size: cover;
-  padding-bottom: 3em; }
+  background-size: cover; }
   .hero .hero-inner {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     margin: auto;
-    padding: 3.5em;
+    padding: 1.5em;
     text-align: center; }
     .hero .hero-inner::after {
       clear: both;
@@ -670,14 +669,19 @@ html {
       content: "";
       display: table; }
     .hero .hero-inner .hero-copy {
-      text-align: center; }
-      .hero .hero-inner .hero-copy h1, .hero .hero-inner .hero-copy h3, .hero .hero-inner .hero-copy p {
-        color: rgba(255, 255, 255, 0.7); }
+      text-align: center;
+      color: rgba(79, 117, 111, 0.8);
+      -webkit-text-fill-color: rgba(109, 147, 141, 0.4);
+      -webkit-text-stroke-width: 4px;
+      -webkit-text-stroke-color: black; }
       .hero .hero-inner .hero-copy h1 {
         font-size: 3.375em;
         margin-bottom: 0.296em;
         font-weight: normal;
         letter-spacing: 0.05em; }
+        .hero .hero-inner .hero-copy h1 .amp {
+          font-size: 1.5em;
+          line-height: normal; }
         @media screen and (min-width: 900px) {
           .hero .hero-inner .hero-copy h1 {
             font-size: 7.594em; } }
