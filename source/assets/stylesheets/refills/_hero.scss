@@ -12,13 +12,12 @@
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 3em;
 
   .hero-inner {
     @include outer-container($max-width);
     @include clearfix;
     margin: auto;
-    padding: 3.5em;
+    padding: 1.5em;
     text-align: center;
 
     .hero-copy {
