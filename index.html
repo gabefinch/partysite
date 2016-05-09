@@ -41,8 +41,8 @@
   <div class="hero">
   	<div class="hero-inner">
   		<div class="hero-copy">
-  			<h1>Gabe <span class="amp">&amp;</span> Allisa</h1>
-  			<h3>+=1</h3>
+  			<h1 id="header">Gabe <span class="amp">&amp;</span> Allisa</h1>
+  			<h3>+1</h3>
   		</div>
   	</div>
   </div>
@@ -229,9 +229,7 @@
     <p class="type" id="bring">Bring</p>
     <h1>What To Bring</h1>
 
-    <p><span>Lorem ipsum dolor sit amet</span>, consectetur adipisicing elit. Consequatur a, ullam, voluptatum incidunt neque doloremque vel inventore distinctio laudantium harum</a> illo quam nulla dolor alias iure impedit! Accusamus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, a, ullam, voluptatum incidunt neque porro numquam doloremque vel inventore distinctio laudantium harum illo quam nulla dolor alias iure impedit.
-      <a href="javascript:void(0)" class="read-more">Read More <span>&rsaquo;</span></a>
-    </p>
+    <p>Typical picnic gear: blanket, lawn chair, sunscreen, Frisbee/lawn game, towel/swimsuit (Sellwood Park has an outdoor kiddie pool, and the Willamette River is walking distance away for a short dip), anything else that you love to have when you picnic at the park! Sellwood Park has basic bathroom facilities throughout the premises. New Seasons Market is the nearest grocery store, in case you want to pick up any last minute supplies on your way. Your presence is gift enough, but if you’d like to give an additional gift, please visit our <a href="http://www.myregistry.com/wishlist/Allisa-Beymer-Gabe-Finch-Portland-OR/1084591" target="_blank">registry</a>. </p>
   </article>
 
   <article class="type-system-geometric">
@@ -283,9 +281,7 @@
     <p class="type" id="questions">Things we forgot?</p>
     <h1>Questions?</h1>
 
-    <p><span>Lorem ipsum dolor sit amet</span>, consectetur adipisicing elit. Consequatur a, ullam, voluptatum incidunt neque doloremque vel inventore distinctio laudantium harum</a> illo quam nulla dolor alias iure impedit! Accusamus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, a, ullam, voluptatum incidunt neque porro numquam doloremque vel inventore distinctio laudantium harum illo quam nulla dolor alias iure impedit.
-      <a href="javascript:void(0)" class="read-more">Read More <span>&rsaquo;</span></a>
-    </p>
+    <p>Please direct all questions to <a href="mailto:allisagabe@gmail.com" target="_blank">allisagabe@gmail.com</a></p>
 
   </article>
 
@@ -324,7 +320,6 @@
 </footer>
 
 <script src="https://maps.googleapis.com/maps/api/js"></script>
-
 <script>
   var bittersMap = (function () {
     var mapCenter = new google.maps.LatLng(45.4687019,-122.6609832),
@@ -379,6 +374,14 @@
 
   bittersMap.init();
 </script>
+
+<!-- <script>
+  var randomizeHeader = (function() {
+    if(Math.random() > 0.5) {
+      jQuery('#header').empty().html('Allisa <span class="amp">&amp;</span> Gabe');
+    }
+  })();
+</script> -->
 
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="assets/javascripts/application.js"></script>

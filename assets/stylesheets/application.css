@@ -648,7 +648,7 @@ html {
           margin-right: 0; } }
 
 .hero {
-  background: url("../images/tyediehorizontal.jpg"), no-repeat scroll;
+  background: url("../images/symetrictop.jpg"), no-repeat scroll;
   background-color: #324766;
   background-position: top;
   background-repeat: no-repeat;
@@ -670,9 +670,9 @@ html {
       display: table; }
     .hero .hero-inner .hero-copy {
       text-align: center;
-      color: rgba(79, 117, 111, 0.8);
-      -webkit-text-fill-color: rgba(109, 147, 141, 0.4);
-      -webkit-text-stroke-width: 4px;
+      color: rgba(255, 247, 118, 0.76);
+      -webkit-text-fill-color: rgba(255, 247, 118, 0.68);
+      -webkit-text-stroke-width: 2px;
       -webkit-text-stroke-color: black; }
       .hero .hero-inner .hero-copy h1 {
         font-size: 3.375em;
@@ -684,22 +684,41 @@ html {
           line-height: normal; }
         @media screen and (min-width: 900px) {
           .hero .hero-inner .hero-copy h1 {
-            font-size: 7.594em; } }
+            font-size: 7.594em;
+            -webkit-text-stroke-width: 4px; } }
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none; } }
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none; } }
       .hero .hero-inner .hero-copy h3 {
         font-size: 2.25em;
         margin-bottom: 0.198em;
         font-weight: normal;
-        letter-spacing: 0.05em; }
+        letter-spacing: 0.05em;
+        -webkit-animation-duration: 3.5s;
+                animation-duration: 3.5s;
+        -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+        -webkit-animation-name: fadeInDown;
+                animation-name: fadeInDown; }
         @media screen and (min-width: 900px) {
           .hero .hero-inner .hero-copy h3 {
-            font-size: 3.375em; } }
-      .hero .hero-inner .hero-copy p {
-        line-height: 1.4em;
-        margin: 0 auto 3em auto; }
-        @media screen and (min-width: 900px) {
-          .hero .hero-inner .hero-copy p {
-            font-size: 1.0em;
-            max-width: 40%; } }
+            font-size: 3.375em;
+            -webkit-text-stroke-width: 4px; } }
 
 .centered-navigation {
   background-color: #E7F1EC;
