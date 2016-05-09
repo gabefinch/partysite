@@ -2,10 +2,9 @@
   $base-border-radius: 3px !default;
   $action-color: #477DCA !default;
   $large-screen: 53.75em !default;
-  $hero-color: rgba(255, 255, 255, 0.7);
+  $hero-color: rgba(79, 117, 111, 0.8);
   $gradient-angle: 10deg;
   $hero-image: "../images/tyediehorizontal.jpg";
-  $hero-txt-image: "../images/tyedievertical.jpg";
 
   background: url($hero-image),
               no-repeat scroll;
@@ -24,17 +23,23 @@
 
     .hero-copy {
       text-align: center;
+      color: $hero-color;
+      -webkit-text-fill-color: rgba(109, 147, 141, 0.4);
+      -webkit-text-stroke-width: 4px;
+      -webkit-text-stroke-color: black;
 
-      h1, h3, p {
-        color: $hero-color;
-      }
       h1 {
         font-size: 3.375em;
         margin-bottom: 0.296em;
         font-weight: normal;
         letter-spacing: 0.05em;
+        .amp {
+          font-size: 1.5em;
+          line-height: normal;
+        }
         @include media($large-screen) {
           font-size: 7.594em;
+
         }
       }
       h3 {
