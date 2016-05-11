@@ -647,6 +647,11 @@ html {
         .dualbox .photothird:last-child {
           margin-right: 0; } }
 
+.side-image-content {
+  text-align: left; }
+  .side-image-content h1.rsvp-header {
+    font-family: "Rubik Mono One", sans-serif; }
+
 .hero {
   background: url("../images/symetrictop.jpg"), no-repeat scroll;
   background-color: #324766;
